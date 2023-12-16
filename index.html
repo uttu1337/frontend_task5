@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1 часть, задание 2 -->
+    <script src="script.js"></script>
+    <!-- 2 часть, задание 1 -->
+    <script src="part2task1.js"></script>
+    
+    <title>Задание 5</title>
+</head>
+<body>
+    <!-- 1 часть, задание 1 -->
+    Цель работы – приобретение навыков создания для HTML-документа внешних и внутренних скриптов на JavaScript, формирование практических навыков использования операторов и создания функций.
+    <br>
+    <!-- 1 часть, задание 3 -->
+    <script type="text/javascript">
+        alert("У меня определенно появились навыки создания веб-страниц с использованием HTML и CSS!")
+    </script>
+    <!--1 часть, задание 4 -->
+    <script type="text/javascript">
+        let x="11";
+        let y=45;
+        document.write(x+45+'<br>');
+    </script>
+    <!-- 1 часть, задание 5 -->
+    <script type="text/javascript">
+        let a="11";
+        let b=45;
+        document.write(a+45);
+    </script>
+    <!-- 2 часть, задание 2-->
+    <script src="part2task2.js"></script>
+    <!--3 часть, задание 1 -->
+    <br>Для задания 3:
+    <br>За сколько секунд вы пройдёте весь Невский Проспект? Введите скорость в метрах в секунду
+    <form name ="speedForm" action="" method="GET">
+        <input type="text" name ="box">
+        <input type="button" name="button" value="Задание 3" onclick="test(this.form)">
+    </form>
+    <script type="text/javascript">
+        // function delcaration
+        let len = 4500
+        function declarationNevskiy(speed) {
+            
+            document.write('Вы пройдёте Невский за '+' '+len/speed+' секунд!<br>')
+
+        }
+        let expressionNevskiy = function(speed) {
+            document.write('Вы пройдёте Невский за '+' '+len/speed+' секунд!<br>')
+        }
+        let arrowNevskiy = speed => {
+            document.write('Вы пройдёте Невский за '+' '+len/speed+' секунд!<br>')
+        }
+        function test(form) {
+            console.log('aaaa')
+            var inputValue = form.box.value;
+        declarationNevskiy(inputValue)
+        expressionNevskiy(inputValue)
+        arrowNevskiy(inputValue)
+        }
+    </script>
+</body>
